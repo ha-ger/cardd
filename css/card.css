@@ -1,0 +1,132 @@
+body {
+    padding-top     : 40px;
+    margin          : 0;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    min-height      : 90vh;
+    background-color: #fae1dd;
+    user-select: none;
+}
+
+.container.valantine {
+    position: relative;
+    cursor  : pointer;
+    top     : 20px;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%,-50);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.zarf {
+    position        : relative;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    width           : 300px;
+    height          : 200px;
+    background-color: #f08080;
+}
+
+.zarf:before {
+    content              : "";
+    position             : absolute;
+    width                : 212px;
+    height               : 212px;
+    background-color     : #f08080;
+    transform            : rotate(45deg);
+    -webkit-transform    : rotate(45deg);
+    -moz-transform       : rotate(45deg);
+    -ms-transform        : rotate(45deg);
+    -o-transform         : rotate(45deg);
+    top                  : -105px;
+    left                 : 44px;
+    border-radius        : 30px 0 0 0;
+    -webkit-border-radius: 30px 0 0 0;
+    -moz-border-radius   : 30px 0 0 0;
+    -ms-border-radius    : 30px 0 0 0;
+    -o-border-radius     : 30px 0 0 0;
+}
+
+.front {
+    position     : absolute;
+    border-right : 179px solid#f4978e;
+    border-top   : 95px solid transparent;
+    border-bottom: 100px solid transparent;
+    top          : 5px;
+    z-index      : 10;
+    left         : 120px;
+}
+
+.front::before {
+    content    : "";
+    position   : absolute;
+    border-left: 300px solid#f4978e;
+    border-top : 195px solid transparent;
+    top        : -95px;
+    left       : -120px;
+    z-index    : 10;
+
+}
+
+.carf {
+    position             : absolute;
+    width                : 250px;
+    height               : 180px;
+    background-color     : white;
+    border-radius        : 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius   : 2px;
+    -ms-border-radius    : 2px;
+    -o-border-radius     : 2px;
+    display              : flex;
+    justify-content      : center;
+    align-items          : center;
+    flex-direction       : column;
+    transition           : 0.35s;
+    -webkit-transition   : 0.35s;
+    -moz-transition      : 0.35s;
+    -ms-transition       : 0.35s;
+    -o-transition        : 0.35s;
+
+}
+
+.carf:before {
+    content: "";
+
+    position: absolute;
+    top     : 10px;
+    bottom  : 10px;
+    left    : 10px;
+    right   : 10px;
+    border  : 2px dashed purple;
+}
+
+i.fa-solid fa-heart {
+    background-color: rgb(226, 35, 35) ! important;
+    font-size       : 50px;
+}
+
+.valantine:hover .carf {
+    transform        : translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform   : translateY(-100px);
+    -ms-transform    : translateY(-100px);
+    -o-transform     : translateY(-100px);
+}
+
+.carf .text {
+    font-family: 'Dancing Script', cursive;
+
+    font-size     : 28px;
+    line-height   : 1.4;
+    text-align    : center;
+    color         : purple;
+    text-transform: capitalize;
+    font-weight   : bolder;
+}
